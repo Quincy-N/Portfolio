@@ -1,0 +1,244 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title></title>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link href="./css/style.css" type="text/css" rel="stylesheet">
+    <script src="./scripts/navigation.js" defer></script>
+    <script src="./scripts/fadeIn.js" defer></script>
+    <script src="./scripts/timeSpent.js" defer></script>
+    <script src="./scripts/greetings.js" defer></script>
+    <script src="./scripts/skillCertificate.js" defer></script>
+    <script src="./scripts/carousels.js" defer></script>
+  </head>
+
+  <body>
+    <header>
+        <nav id="nav-bar">
+          <a href="#page-top"><img id="Q" src="./resources/images/Q.svg"/></a>
+          <ul id="primary-nav" class="nav-links">
+            <li id="nav-1" class="nav-item"><a href="#about-section-end">Skills</a></li>
+            <li id="nav-2" class="nav-item"><a href="#skills-section-end">Projects</a></li>
+            <li id="nav-3" class="nav-item"><a href="#projects-section-end">Contact</a></li>
+          </ul>
+          <button class="nav-toggle" aria-controls="primary-nav" aria-expanded="false" aria-label="menu" active="false"></button>
+        </nav>
+    </header>
+    <section id="intro-section">
+      <div id="page-top"></div>
+      <div id="my-picture-container">
+        <img id="my-picture" src="./resources/images/headshot.png" />
+      </div>
+      <div id="greeting-container">
+        <h1 id="greeting-english">Hello</h1>
+        <div id="greeting-other-container">
+          <h1 id="greeting-other">A Gutn Tog</h1>
+        </div>
+        <h3 id="intro">My name is <span id="name">Quincy Njemanze</span>. I've been strengthening my skills in web development and software engineering for...</h3>
+        <div id="time-container">
+          <h2 id="years-num" aria-labelledby="years-label"></h2>
+          <h3 id="years-label">YEARS</h3>
+          <h2 id="months-num" aria-labelledby="months-label"></h2>
+          <h3 id="months-label">MONTHS</h3>
+          <h2 id="days-num" aria-labelledby="days-label"></h2>
+          <h3 id="days-label">DAYS</h3>
+          <h2 id="hours-num" aria-labelledby="hours-label"></h2>
+          <h3 id="hours-label">HOURS</h3>
+          <h2 id="minutes-num" aria-labelledby="minutes-label"></h2>
+          <h3 id="minutes-label">MINUTES</h3>
+          <h2 id="seconds-num" aria-labelledby="seconds-label"></h2>
+          <h3 id="seconds-label">SECONDS</h3>
+        </div>
+      </div>
+    </section>
+    <section id="about-section">
+      <h2>ABOUT ME</h2>
+      <p>I've always been a creative person. Some things I enjoy are DIY projects, figuring out how things work, and bringing my ideas to life. Over the years I've gained experience in different areas such as mechanical engineering, electrical engineering, graphic design, and coding. Coding has always been a useful skill that I enjoy, and in late 2021, I decided to build those skills to be able to work in web development and software engineering. I'm currently based in Arizona, USA.</p>
+      <div id="about-section-end"></div>
+    </section>
+    <section id="skills-section">
+      <h2>SKILLS</h2>
+      <p>I currently have 20+ certificates from completing online courses with Codecademy. Here are some courses I've completed so far:</p>
+      <ul id="skills-list">
+        <li id="angular-js" class="skill-list-item" in-view="true">Angular JS 1.X<img id="eye" src="./resources/images/eye-icon.png" /></li>
+        <li id="bootstrap" class="skill-list-item" in-view="false">Bootstrap</li>
+        <li id="code-foundations" class="skill-list-item" in-view="false">Code Foundations</li>
+        <li id="css" class="skill-list-item" in-view="false">CSS</li>
+        <li id="express" class="skill-list-item" in-view="false">Express</li>
+        <li id="git-github" class="skill-list-item" in-view="false">Git & GitHub</li>
+        <li id="html" class="skill-list-item" in-view="false">HTML</li>
+        <li id="devops" class="skill-list-item" in-view="false">Introduction to DevOps</li>
+        <li id="java" class="skill-list-item" in-view="false">Java</li>
+        <li id="java-oop" class="skill-list-item" in-view="false">Java: Object Oriented Programming</li>
+        <li id="javascript" class="skill-list-item" in-view="false">JavaScript</li>
+        <li id="async-javascript" class="skill-list-item" in-view="false">JavaScript: Asynchronous Programming</li>
+        <li id="building-javascript-sites" class="skill-list-item" in-view="false">Building Interactive JavaScript Websites</li>
+        <li id="intermediate-javascript" class="skill-list-item" in-view="false">Intermediate JavaScript</li>
+        <li id="node" class="skill-list-item" in-view="false">Node.js</li>
+        <li id="node-sqlite" class="skill-list-item" in-view="false">Node SQLite</li>
+        <li id="react" class="skill-list-item" in-view="false">React</li>
+        <li id="spring" class="skill-list-item" in-view="false">Spring</li>
+        <li id="sql" class="skill-list-item" in-view="false">SQL</li>
+        <li id="typescript" class="skill-list-item" in-view="false">TypeScript</li>
+        <li id="vue" class="skill-list-item" in-view="false">Vue.js</li>
+      </ul>
+      <div id="certificate-container">
+        <img id="certificate" src="./resources/images/angular.png" alt="Codecademy certificate of completion for Angular JS 1.X course" />
+      </div>
+      <div id="skills-section-end"></div>
+    </section>
+    <section id="projects-section">
+      <h2>PROJECTS</h2>
+      <h3>Personal projects</h3>
+      <p>These are projects I've done outside of Codecademy.</p>
+      <div class="project-container">
+        <div class="project-text-container">
+          <h4>ANIMAL ADVENTURES</h4>
+          <button><a href="https://quincy-n.github.io/Animal-Adventures/" target="_blank" rel="noopener noreferrer">Visit site</a></button>
+          <p class="project-description">I created a responsive site for Animal Adventures (this is not an existing company). The site includes a home page, a page to set up a visit by getting tickets, a page to see what animals are there and search through them, and an events page.</p>
+        </div>
+        <div class="project-image-container">
+          <img class="project-image" src="./resources/images/animal-adventures.png" />
+        </div>
+      </div>
+      <div class="project-container">
+        <div class="project-text-container">
+          <h4>WORDYMON</h4>
+          <button><a href="https://quincy-n.github.io/Wordymon/" target="_blank" rel="noopener noreferrer">Visit site</a></button>
+          <p class="project-description">Wordymon is a game I created that combines some gameplay elements from a Pokémon battle and Scrabble.</p>
+        </div>
+        <div class="project-image-container">
+          <img class="project-image" src="./resources/images/wordymon.png" />
+        </div>
+      </div>
+      <h3>Codecademy projects</h3>
+      <p>Most of Codecademy's courses include projects. Here are some projects from the courses I completed.</p>
+      <div class="project-container">
+        <div class="project-text-container">
+          <h4 class="course">COURSE: LEARN GIT & GITHUB</h4>
+          <h4 class="project-name">Off-Platform Project: Excursion</h4>
+          <button><a href="https://quincy-n.github.io/excursion/" target="_blank" rel="noopener noreferrer">Visit site</a></button>
+          <p class="project-description"><strong>Project description: </strong>In this project, you'll create a web page which advertises a product called "Excursion." You'll use your growing toolset including HTML, CSS, Command Line Interface, Git, and GitHub.<br>The web page we'll build advertises a mobile app which helps users record and share their experiences, so we'll use video and landscape imagery to set the scene.</p>
+        </div>
+        <div class="project-image-container">
+          <img class="project-image" src="./resources/images/excursion.png" />
+        </div>
+      </div>
+      <div class="project-container">
+        <div class="project-text-container">
+          <h4 class="course">COURSE: LEARN JAVA</h4>
+          <h4 class="project-name">2D Arrays: Image Manipulation Project</h4>
+          <p class="project-description"><strong>Project description: </strong>In this project, you will be creating an application which is able to modify images as well as create new images using 2D arrays! The first section covers stretching the image horizontally, shrinking the image vertically, negating the color, applying a color filter, and inverting the image. The second section covers creating an image consisting of random pixels, placing a rectangle in the image, and using the method to randomly place many rectangles in the image.</p>
+        </div>
+        <div class="project-image-container">
+          <div class="images-navs">
+            <button class="image-nav-left"></button>
+            <button class="image-nav-right"></button>
+          </div>
+          <ul class="carousel">
+            <li class="carousel-image-container" active="true"><img class="project-image" src="./resources/images/image-manipulation-1.png" /></li>
+            <li class="carousel-image-container"><img class="project-image" src="./resources/images/image-manipulation-2.png" /></li>
+            <li class="carousel-image-container"><img class="project-image" src="./resources/images/image-manipulation-3.png" /></li>
+          </ul>
+          <div class="carousel-nav">
+            <button class="image-indicator" place="0" active="true"></button>
+            <button class="image-indicator" place="1"></button>
+            <button class="image-indicator" place="2"></button>
+          </div>
+        </div>
+      </div>
+      <div class="project-container">
+        <div class="project-text-container">
+          <h4 class="course">COURSE: BUILDING INTERACTIVE JAVASCRIPT WEBSITES</h4>
+          <h4 class="project-name">Musicon</h4>
+          <p class="project-description"><strong>Project description: </strong>In this project, you will be updating the website of an online musical instruments store, Musicon. You will incorporate your knowledge of HTML, CSS, JavaScript, and Handlebars to make a multi-page interactive website! Your job is to create a navigation bar using unordered lists, anchor tags, and class attributes, style the website, build out semantic templates using Handlebars, and display relevant information using JavaScript objects, arrays, and control flow alongside built-in Handlebars iteration and control flow helpers.</p>
+        </div>
+        <div class="project-image-container">
+          <div class="images-navs">
+            <button class="image-nav-left"></button>
+            <button class="image-nav-right"></button>
+          </div>
+          <ul class="carousel">
+            <li class="carousel-image-container" active="true"><img class="project-image" src="./resources/images/musicon-1.png" /></li>
+            <li class="carousel-image-container"><img class="project-image" src="./resources/images/musicon-2.png" /></li>
+            <li class="carousel-image-container"><img class="project-image" src="./resources/images/musicon-3.png" /></li>
+          </ul>
+          <div class="carousel-nav">
+            <button class="image-indicator" place="0" active="true"></button>
+            <button class="image-indicator" place="1"></button>
+            <button class="image-indicator" place="2"></button>
+          </div>
+        </div>
+      </div>
+      <div class="project-container">
+        <div class="project-text-container">
+          <h4 class="course">COURSE: LEARN INTERMEDIATE JAVASCRIPT</h4>
+          <h4 class="project-name">Film Finder</h4>
+          <p class="project-description"><strong>Project description: </strong>You've caught up on your list of TV shows and movies and want to get recommendations for what to watch next, but aren't sure where to look. In this project, you'll use your knowledge of HTTP requests and asynchronous JavaScript to create a movie discovery app that will recommend random movies by genre. You'll be able to choose from several genres, and like or dislike a movie to get another suggestion.</p>
+        </div>
+        <div class="project-image-container">
+          <div class="images-navs">
+            <button class="image-nav-left"></button>
+            <button class="image-nav-right"></button>
+          </div>
+          <ul class="carousel">
+            <li class="carousel-image-container" active="true"><img class="project-image" src="./resources/images/film-finder-1.png" /></li>
+            <li class="carousel-image-container"><img class="project-image" src="./resources/images/film-finder-2.png" /></li>
+          </ul>
+          <div class="carousel-nav">
+            <button class="image-indicator" place="0" active="true"></button>
+            <button class="image-indicator" place="1"></button>
+          </div>
+        </div>
+      </div>
+      <div class="project-container">
+        <div class="project-text-container">
+          <h4 class="course">COURSE: LEARN NODE.JS</h4>
+          <h4 class="project-name">Rock-Paper-Scissors</h4>
+          <p class="project-description"><strong>Project description: </strong>Using your knowledge in Node.js, let's create an online version of Rock-Paper-Scissors where you can play against the HTTP server. Using the http module, we will build a simple HTTP server. We will practice how to route requests based on pathname and request methods. We will also be using other core Node.js components in this project—we will use the fs module to stream HTML files and create an URL object to extract queries from a URL.</p>
+        </div>
+        <div class="project-image-container">
+          <img class="project-image" src="./resources/images/rock-paper-scissors.png" />
+        </div>
+      </div>
+      <div class="project-container">
+        <div class="project-text-container">
+          <h4 class="course">COURSE: LEARN REACT</h4>
+          <h4 class="project-name">Passing Thoughts</h4>
+          <p class="project-description"><strong>Project description: </strong>What if you could post something and know it wouldn't live forever? In this project, we'll build a place for our passing thoughts. Once you add a short thought, it'll disappear after just 15 seconds.</p>
+        </div>
+        <div class="project-image-container">
+          <img class="project-image" src="./resources/images/passing-thoughts.png" />
+        </div>
+      </div>
+      <div class="project-container">
+        <div class="project-text-container">
+          <h4 class="course">COURSE: LEARN SPRING</h4>
+          <h4 class="project-name">The Boots Bootique</h4>
+          <p class="project-description"><strong>Project description: </strong>A new shop, the Boots Bootique, is set to open their flagship store this spring. However, they've got no way to manage their inventory yet! The store owns a collection of boots of different sizes, types, materials, and quantities. Help the shop create their inventorying system in time for their opening. For this project, we'll use Spring Data JPA to complete the functionality for the Boots API so the frontend can: <strong>C</strong>reate new boots, <strong>R</strong>ead and search the boots in the inventory, <strong>U</strong>pdate the number of any given boot in the inventory, <strong>D</strong>elete boots from the inventory.</p>
+        </div>
+        <div class="project-image-container">
+          <div class="images-navs">
+            <button class="image-nav-left"></button>
+            <button class="image-nav-right"></button>
+          </div>
+          <ul class="carousel">
+            <li class="carousel-image-container" active="true"><img class="project-image" src="./resources/images/boots-bootique-1.png" /></li>
+            <li class="carousel-image-container"><img class="project-image" src="./resources/images/boots-bootique-2.png" /></li>
+          </ul>
+          <div class="carousel-nav">
+            <button class="image-indicator" place="0" active="true"></button>
+            <button class="image-indicator" place="1"></button>
+          </div>
+        </div>
+      </div>
+      <div id="projects-section-end"></div>
+    </section>
+    <section id="contact-section">
+      <h2>CONTACT</h2>
+      <p>Thank you for taking the time to check out my portfolio! If you would like to contact me, please use the method below.</p>
+      <h3><span>Email: </span>njemqnd@aol.com</h3>
+    </section>
+  </body>
+</html>
