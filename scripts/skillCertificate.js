@@ -6,6 +6,7 @@ const certificates = [
     {id: 'async-javascript', source: './resources/images/async-javascript.png'},
     {id: 'bootstrap', source: './resources/images/bootstrap.png'},
     {id: 'building-javascript-sites', source: './resources/images/building-interactive-javascript-sites.png'},
+    {id: 'c', source: './resources/images/c.png'},
     {id: 'code-foundations', source: './resources/images/code-foundations.png'},
     {id: 'css', source: './resources/images/css.png'},
     {id: 'devops', source: './resources/images/devops.png'},
@@ -26,46 +27,37 @@ const certificates = [
 ]
 let courseName = 'Angular JS 1.X';
 let mediaQueryInfo750 = window.matchMedia("(max-width: 750px)");
-//display certificate to match the skill and move certificate to stay near the skill element
+//Function to display certificate to match the skill and move certificate to stay near the skill element
+const showCertificate = (skill) => {
+    if (eyeIcon.parentElement != skill) {
+        courseName = skill.innerHTML;
+    }
+    let firstSkillY = skills[0].getBoundingClientRect().y;
+    eyeIcon.parentElement.setAttribute('in-view', false);
+    skill.append(eyeIcon);
+    skill.setAttribute('in-view', true);
+    let targetCertificate = certificates.filter(item => {
+        if (item.id == skill.getAttribute('id')) {
+            return true;
+        }
+    });
+    certificate.setAttribute('src', targetCertificate[0].source);
+    certificate.setAttribute('alt', `Codecademy certificate of completion for ${courseName} course`);
+    if (!mediaQueryInfo750.matches) {
+        let skillY = skill.getBoundingClientRect().y;
+        certificate.style.transform = `translateY(${(skillY - firstSkillY)/1.8}px)`;
+    }
+}
 for (let skill of skills) {
     skill.addEventListener('mouseover', () => {
-        if (eyeIcon.parentElement != skill) {
-            courseName = skill.innerHTML;
-        }
-        let firstSkillY = skills[0].getBoundingClientRect().y;
-        eyeIcon.parentElement.setAttribute('in-view', false);
-        skill.append(eyeIcon);
-        skill.setAttribute('in-view', true);
-        let targetCertificate = certificates.filter(item => {
-            if (item.id == skill.getAttribute('id')) {
-                return true;
-            }
-        });
-        certificate.setAttribute('src', targetCertificate[0].source);
-        certificate.setAttribute('alt', `Codecademy certificate of completion for ${courseName} course`);
-        if (!mediaQueryInfo750.matches) {
-            let skillY = skill.getBoundingClientRect().y;
-            certificate.style.transform = `translateY(${(skillY - firstSkillY)/1.8}px)`;
-        }
+        showCertificate(skill);
     });
     skill.addEventListener('click', () => {
-        if (eyeIcon.parentElement != skill) {
-            courseName = skill.innerHTML;
-        }
-        let firstSkillY = skills[0].getBoundingClientRect().y;
-        eyeIcon.parentElement.setAttribute('in-view', false);
-        skill.append(eyeIcon);
-        skill.setAttribute('in-view', true);
-        let targetCertificate = certificates.filter(item => {
-            if (item.id == skill.getAttribute('id')) {
-                return true;
-            }
-        });
-        certificate.setAttribute('src', targetCertificate[0].source);
-        certificate.setAttribute('alt', `Codecademy certificate of completion for ${courseName} course`);
-        if (!mediaQueryInfo750.matches) {
-            let skillY = skill.getBoundingClientRect().y;
-            certificate.style.transform = `translateY(${(skillY - firstSkillY)/1.8}px)`;
-        }
+        showCertificate(skill);
     });
 }
+window.addEventListener('resize', () => {
+    if (mediaQueryInfo750.matches) {
+        certificate.removeAttribute('style');
+    }
+})
