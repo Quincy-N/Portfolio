@@ -521,7 +521,7 @@ section > * {
 }
 
 #contact-section {
-    padding-bottom: 40vw;
+    padding-bottom: 20vw;
 }
 
 #contact-section h2 {
@@ -739,6 +739,10 @@ section > * {
         width: 10vw;
         height: 10vw;
         right: -10vw;
+    }
+
+    #contact-section {
+        padding-bottom: 40vw;
     }
 }
 
