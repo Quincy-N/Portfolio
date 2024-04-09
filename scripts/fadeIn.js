@@ -11,7 +11,7 @@ const sectionObserver = new IntersectionObserver(function(entries, sectionObserv
             sectionObserver.unobserve(entry.target);
         }
     })
-}, {threshold: 0, rootMargin: '0px 0px -250px 0px'});
+}, {threshold: 0, rootMargin: '0px 0px -50px 0px'});
 
 for (let sectionChild of sectionChildren) {
     sectionObserver.observe(sectionChild);
