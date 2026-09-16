@@ -7,6 +7,7 @@ const certificates = [
     {id: 'bootstrap', source: './resources/images/bootstrap.png'},
     {id: 'building-javascript-sites', source: './resources/images/building-interactive-javascript-sites.png'},
     {id: 'c', source: './resources/images/c.png'},
+    {id: 'c-sharp', source: './resources/images/c-sharp.png'},
     {id: 'code-foundations', source: './resources/images/code-foundations.png'},
     {id: 'css', source: './resources/images/css.png'},
     {id: 'devops', source: './resources/images/devops.png'},

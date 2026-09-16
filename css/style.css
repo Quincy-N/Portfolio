@@ -418,7 +418,7 @@ section > * {
     color: white;
 }
 
-.project-image-container {
+.project-image-container, .project-video-container {
     grid-column: 2 / span 1;
     position: relative;
     align-self: center;
@@ -428,7 +428,7 @@ section > * {
     
 }
 
-.project-image {
+.project-image, .project-video {
     width: 100%;
     align-self: center;
 }
