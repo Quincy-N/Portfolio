@@ -377,6 +377,10 @@ section > * {
     border-radius: 2vw;
 }
 
+.project-container:has(video) {
+    grid-template-columns: .8fr 1.2fr;
+}
+
 .project-text-container {
     grid-column: 1 / span 1;
     padding-right: 4vw;
